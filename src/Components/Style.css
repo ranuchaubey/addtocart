@@ -1,0 +1,58 @@
+.card_style {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card_style:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.213);
+}
+.itemdetails {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+}
+.item_img {
+  flex: 0.4;
+}
+.item_img img {
+  width: 20rem;
+  border-radius: 6px;
+}
+.details {
+  flex: .5;
+}
+.smalldelete{
+  display: none;
+}
+@media (max-width:772px){
+      .iteamsdetails{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+  
+  @media (max-width:450px){
+      .smalldelete{
+          display: block;
+      }
+      .largedelete{
+          display:none;
+      }
+      .emptycart_img{
+          margin-right: 50px;
+      }
+      .smallclose{
+          display: none;
+      }
+  
+      /* individual iteams details */
+     
+      .items_img img{
+          width: 16rem;
+      }
+      
+  }
+
